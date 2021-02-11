@@ -1,0 +1,23 @@
+/* main .header {
+    background-color: violet;
+    display: flex;
+}
+main {
+    position: relative;
+}
+ .header {
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    
+}
+.header button {
+       
+    margin: 4px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .header .fa {
+      font-size: 15px;
+  } */

@@ -1,0 +1,251 @@
+nav {
+    width: 100%;
+    min-height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border-bottom: 2px solid orange; */
+    position: relative;
+
+}
+.search-shopping {
+display: flex;
+flex-direction: row;
+}
+form {
+    position: relative;
+}
+.input-search {
+    width: 190px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.116);
+    padding: 0 7px;
+    color: black;
+    transition: border-color 0.25s ;
+}
+form .input-search:focus {
+    border-color: rgba(81, 203, 238, 1);
+    
+}
+.search-icon {
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    
+}
+/* .search-none {
+    display: none;
+} */
+.shopping-cart {
+    margin-left: 6px;
+    font-size: 20px;
+}
+.menu-icon {
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+    
+}
+.title {
+    display: flex;
+    flex-direction: row;
+}
+.title h1 {
+    font-size: 20px;
+}
+.icon-orange {
+    color: orange;
+    font-size: 32px;
+}
+ul {
+    list-style-type: none;
+}
+/* .menu-icon {
+    display: none;
+} */
+.links  {
+    display: none;
+   
+}
+.links {
+    display: none;
+    justify-content: center;
+}
+.links ul {
+    display: flex;
+    flex-direction: row;
+
+}
+.links ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s linear;
+}
+.links ul li a:hover {
+    border-bottom: 2px solid orange;
+}
+.links ul li {
+    padding: 3px 10px;
+    /* width: 80px;
+    height: 29px; */
+    margin: 0 15px;
+    text-align: center;
+   
+}
+.links button {
+    display: flex;
+}
+
+nav button {
+    cursor: pointer;
+}
+nav #hidden {
+    display: flex;
+   
+}
+ #hidden {
+    position: absolute;
+    left: 0px;
+    top: 95px;
+    height: 0px;
+    width: 100%;
+    /* background-color: green;
+    opacity: 0.6; */
+    margin: 15px 0;
+    font-size: 25px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* li */
+ ul li {
+    position: relative;
+    border: none;
+    padding: 20px 35px;
+    cursor: pointer;
+  }
+  form input:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+  }
+/*   
+  ul li::after, ul li::before {
+      content: '';
+      position: absolute;
+      width: 25%;
+      height: 25%;
+      border: 2px solid orange;
+      transition: all 1s ease;
+  }
+  
+  ul li::after {
+      bottom: 0;
+      right: 0;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      
+  }
+  ul li::before {
+      top: 0;
+      left: 0;
+      border-top-color: transparent;
+      border-left-color: transparent;
+     transform: rotate(180deg);
+      
+  }
+  ul li:hover::after,ul li:hover::before {
+    width: 100%;
+    height: 100%;
+  } */
+  
+
+.li1 {
+    animation-name: li1;
+    animation-duration: 2.7s;
+}
+.li2 {
+    animation-name: li2;
+    animation-duration: 1.7s;
+}
+.li3 {
+    animation-name: li3;
+    animation-duration: 0.8s;
+}
+.li4 {
+    animation-name: li3;
+    animation-duration: 0.4s;
+}
+@keyframes li1 {
+    0% {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+@keyframes li2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+@keyframes li3 {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-icon {
+        display: flex;
+        position: absolute;
+        left: 10px;
+        top: 12px;
+        font-size: 28px;
+    }
+    .links {
+        position: relative;
+        
+    }
+    .links ul li a {
+        border-bottom: 2px solid orange;
+    }
+    .links ul li {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-top: 6px;
+
+        
+    }
+    /* li::after {
+        display: none;
+    }
+    li::before {
+        display: none;
+    } */
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+     
+ 
+  
+}
